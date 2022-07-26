@@ -1,0 +1,176 @@
+\\\\\<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Silence of the Lambs</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: "Gill Sans MT";
+        font-size: 48px;
+        font-weight: 700;
+        color: #161618;
+        margin: 20px 10px 5px;
+      }
+      h2 {
+        font-family: monospace;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid #171717;
+        border-radius: 5px;
+        padding: 5px;
+        max-width: 475px;
+        margin: 0px auto 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+      p {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      ul {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        list-style-type: none;
+        padding: 0;
+        border: 4px solid #171717;
+        border-radius: 20px;
+        max-width: 50%;
+        margin: 15px auto;
+        padding: 5px 5px;
+      }
+      li {
+        text-indent: 2em;
+        line-height: 2;
+      }
+      .extraInfo {
+        float: left;
+      }
+      .codedByMe {
+        float: right;
+      }
+      a {
+        color: #fddf27;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        font-family: "Trebuchet MS";
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 30px;
+        border: 2px solid #8b5024;
+        border-radius: 30px;
+        background: #e6e7df;
+        box-shadow: 3px 5px 9px #000000;
+        text-align: center;
+        transition: all 200ms ease-in-out;
+      }
+      .clickMe {
+        text-align: center;
+      }
+      button:hover {
+        background: #8b5024;
+        cursor: pointer;
+      }
+      hr {
+        max-width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>The Silence of the Lambs</em> (1991)</h1>
+    <h2>One of the best horror films of all time</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/677/original/projectimg.jpg?1647806624"
+      alt="Silence of the Lambs movie poster"
+    />
+    <ul>
+      <li>
+        <em>The Silence of the Lambs</em> is a 1991 American psychological
+        horror thriller film directed by Jonathan Demme and written by Ted
+        Tally, adapted from Thomas Harris's 1988 novel. It is often cited as one
+        of the greatest, most influential movies of all time. It stars Jodie
+        Foster as Clarice Starling, a young FBI trainee who is hunting a serial
+        killer, "Buffalo Bill" (Ted Levine), who skins his female victims. To
+        catch him, she seeks the advice of the imprisoned Dr. Hannibal Lecter
+        (Anthony Hopkins), a brilliant psychiatrist and cannibalistic serial
+        killer.
+      </li>
+      <li>
+        The movie's cultural impact still lingers, over 30 years after its
+        release. If you watched this movie today, you may find it a bit
+        over-the-top and even comical; however, at the time, this film changed
+        the trajectory of horror movies from simple "slasher" plots to the more
+        sophisticated stylings of psychological thrillers. Though not all
+        impacts are positive — the portrayal of queer-coded serial killer
+        Buffalo Bill left a bad taste in many LGBTQ+ advocates' mouths. Although
+        director Demme tried to separate Buffalo Bill from the trans community
+        in the script, many feel it was not enough.
+      </li>
+      <li>
+        Although the legacy of this movie is questionable,
+        <em>The Silence of the Lambs</em> is an iconic piece of American media.
+      </li>
+      <br />
+      <div class="clickMe">
+        <button>Click me!</button>
+      </div>
+      <br />
+    </ul>
+    <hr />
+    <div>
+      <p class="extraInfo">
+        <em
+          >Learn more on
+          <a
+            href="https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)"
+            target="_blank"
+          >
+            Wikipedia</a
+          >
+          and
+          <a
+            href="https://www.vox.com/culture/22281548/silence-of-the-lambs-cultural-impact-legacy-feminist-transphobia"
+            target="_blank"
+            >Vox</a
+          ></em
+        >
+      </p>
+
+      <span
+        ><p class="codedByMe">This page was coded by Katie Peterson ✨</p></span
+      >
+    </div>
+    <script>
+      function questionnaire() {
+        let name = prompt("Hi! What is your name?");
+        let answer = prompt("Have you ever seen Silence of the Lambs?");
+        answer = answer.toLowerCase();
+        answer = answer.trim();
+        if (
+          answer === "yes" ||
+          answer === "yeah" ||
+          answer === "yep" ||
+          answer === "yup"
+        ) {
+          alert(`Awesome, ${name}! I hope you enjoyed it 😈`);
+        } else {
+          alert(`I highly recommend it, ${name}!!`);
+        }
+      }
+      let questionniareButton = document.querySelector("button");
+      questionniareButton.addEventListener("click", questionnaire);
+    </script>
+  </body>
+</html>

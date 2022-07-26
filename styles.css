@@ -9,6 +9,7 @@
 }
 
 body {
+  font-family: var(--content-font);
   background-color: var(--main-bg-color);
 }
 
@@ -41,4 +42,42 @@ h2 {
   font-weight: 500;
   font-style: italic;
   border-radius: 12px;
+}
+
+.btn-applications {
+  color: var(--main-bg-color);
+  background: var(--secondary-color);
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.weather-app-img {
+  max-width: 650px;
+  border-radius: 12px;
+  border: 2px solid var(--tertiary-color);
+}
+
+.tester-portfolio-img {
+  max-width: 650px;
+  border-radius: 12px;
+  border: 2px solid var(--secondary-color);
+}
+
+.movie-project-img {
+  max-width: 650px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+}
+
+.featured-project {
+  font-size: 24px;
+  color: gray;
+}
+
+@media (max-width: 980px) {
+  .featured-projects-list {
+    text-align: center;
+  }
 }
