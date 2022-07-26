@@ -1,7 +1,44 @@
-h1 {
-  font-family: "Courgette", cursive;
+:root {
+  --main-bg-color: #f7ebe8;
+  --primary-color: #197278;
+  --secondary-color: #86ba90;
+  --tertiary-color: #aa767c;
+  --heading-font: "Courgette", cursive;
+  --subheading-font: "Libre Baskerville", serif;
+  --content-font: "Lato", sans-serif;
 }
 
-p {
-  font-family: "Libre Baskerville", serif;
+body {
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+
+h2 {
+  font-family: var(--subheading-font);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 22px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  color: var(--primary-color);
+  margin: 25px;
+}
+
+.btn-portfolio {
+  color: var(--main-bg-color);
+  background: var(--tertiary-color);
+  padding: 10px 25px;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 12px;
 }
