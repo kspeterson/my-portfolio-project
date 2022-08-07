@@ -13,12 +13,18 @@ body {
   background-color: var(--main-bg-color);
 }
 
-h1 {
+h1,
+h4 {
   font-family: var(--heading-font);
 }
 
 h2 {
   font-family: var(--subheading-font);
+}
+
+h3 {
+  font-family: var(--subheading-font);
+  font-size: 20px;
 }
 
 .hero {
@@ -81,6 +87,20 @@ h2 {
   max-width: 330px;
   border: solid 6px var(--secondary-color);
   border-radius: 20px;
+}
+
+.work-img {
+  border: solid 3px var(--secondary-color);
+  border-radius: 4px;
+}
+
+a {
+  color: var(--tertiary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+  transition-delay: 50ms;
 }
 
 @media (max-width: 980px) {
