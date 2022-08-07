@@ -112,8 +112,20 @@ a:hover {
   transition-delay: 50ms;
 }
 
+footer .email-link {
+  display: block;
+  text-align: right;
+  text-decoration: none !important;
+  color: black;
+  margin: 0 20px 5px 0;
+}
+
 @media (max-width: 980px) {
   .featured-projects-list {
+    text-align: center;
+  }
+  .personal {
+    padding: 0 !important;
     text-align: center;
   }
 }
