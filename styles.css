@@ -103,6 +103,15 @@ a:hover {
   transition-delay: 50ms;
 }
 
+.mail-to {
+  color: var(--primary-color);
+}
+
+.mail-to:hover {
+  color: var(--secondary-color);
+  transition-delay: 50ms;
+}
+
 @media (max-width: 980px) {
   .featured-projects-list {
     text-align: center;
